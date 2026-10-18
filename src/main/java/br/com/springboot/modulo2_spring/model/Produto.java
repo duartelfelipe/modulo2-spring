@@ -3,6 +3,16 @@ package br.com.springboot.modulo2_spring.model;
 public class Produto {
     private Integer id;
     private String nome;
+
+    public Produto() {
+    }
+
+    public Produto(Integer id, String nome, double preco) {
+        this.id = id;
+        this.nome = nome;
+        this.preco = preco;
+    }
+
     private double preco;
 
     public Integer getId() {
