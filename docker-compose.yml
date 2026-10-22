@@ -1,0 +1,13 @@
+services:
+  db.db_events:
+    image: mysql:9
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: mysql
+      MYSQL_DATABASE: db_events
+    ports:
+      - '3306:3306'
+    volumes:
+      - mysql.db_events:/var/lib/mysql
+volumes:
+  mysql.db_events:
