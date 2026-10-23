@@ -4,6 +4,7 @@ import jakarta.persistence.*;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
+import java.util.List;
 
 @Entity
 @Table(name = "tbl_session")
@@ -23,6 +24,15 @@ public class Session {
     @ManyToOne
     @JoinColumn(name = "tbl_conference_id_conference")
     private Conference conference;
+
+    //Relacionamento muitos para muitos sem tabela auxiliar
+//    @ManyToMany
+//    @JoinTable(
+//            name = "tbl_subscription",
+//            joinColumns = @JoinColumn(name = "session_id"),
+//            inverseJoinColumns = @JoinColumn(name = "subscribed_user_id")
+//    )
+//    private List<User> users;
 
     @Override
     public String toString() {

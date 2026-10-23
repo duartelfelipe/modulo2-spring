@@ -2,6 +2,8 @@ package br.com.springboot.modulo2_spring.model.events;
 
 import jakarta.persistence.*;
 
+import java.util.List;
+
 @Entity
 @Table(name = "tbl_user")
 public class User {
@@ -14,6 +16,10 @@ public class User {
     private String name;
     @Column(name = "user_email", length = 255, nullable = false)
     private String email;
+
+    //Relacionamento muitos para muitos sem tabela auxiliar
+//    @ManyToMany(mappedBy = "users")
+//    public List<Session> sessions;
 
     @Override
     public String toString() {
