@@ -1,10 +1,9 @@
-package br.com.springboot.modulo2_spring.model.events;
+package br.com.springboot.modulo2_spring.aula4.model;
 
 import jakarta.persistence.*;
 
 import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.List;
 
 @Entity
 @Table(name = "tbl_session")
@@ -12,7 +11,7 @@ public class Session {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_session")
+    @Column(name = "session_id")
     private Integer id;
     @Column(name = "title", length = 255, nullable = false)
     private String title;
@@ -33,6 +32,15 @@ public class Session {
 //            inverseJoinColumns = @JoinColumn(name = "subscribed_user_id")
 //    )
 //    private List<User> users;
+
+
+    public Session(Integer id) {
+        this.id = id;
+    }
+
+    public Session() {
+
+    }
 
     @Override
     public String toString() {

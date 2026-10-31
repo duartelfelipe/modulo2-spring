@@ -1,4 +1,4 @@
-package br.com.springboot.modulo2_spring.model;
+package br.com.springboot.modulo2_spring.aula1.model;
 
 public class Produto {
     private Integer id;

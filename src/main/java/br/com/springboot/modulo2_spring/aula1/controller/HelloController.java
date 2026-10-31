@@ -1,6 +1,6 @@
-package br.com.springboot.modulo2_spring.controller;
+package br.com.springboot.modulo2_spring.aula1.controller;
 
-import br.com.springboot.modulo2_spring.model.Produto;
+import br.com.springboot.modulo2_spring.aula1.model.Produto;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

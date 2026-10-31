@@ -1,14 +1,12 @@
-package br.com.springboot.modulo2_spring.controller;
+package br.com.springboot.modulo2_spring.aula2.controller;
 
-import br.com.springboot.modulo2_spring.model.Produto;
+import br.com.springboot.modulo2_spring.aula1.model.Produto;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
-import java.util.Objects;
 import java.util.stream.IntStream;
 
 @RestController

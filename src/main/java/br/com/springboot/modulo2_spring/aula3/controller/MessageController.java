@@ -1,6 +1,6 @@
-package br.com.springboot.modulo2_spring.controller;
+package br.com.springboot.modulo2_spring.aula3.controller;
 
-import br.com.springboot.modulo2_spring.service.IMessageService;
+import br.com.springboot.modulo2_spring.aula3.service.IMessageService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
